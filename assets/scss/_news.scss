@@ -1,0 +1,140 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  ul{
+    list-style-image: url(../images/icon-list.svg);
+  }
+  body {
+    font-size: 16px;
+    background-color: hsl(234deg, 29%, 20%);
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .mt-4{
+    margin-top: 20px;
+  }
+  .main {
+    width: 700px;
+    border-radius: 15px;
+    background-color: hsl(0deg, 0%, 100%);
+    padding: 30px;
+    display: flex;
+    &-success{
+      width: 350px !important;
+      &-text{
+        width: 100% !important;
+      }
+      .btn-dark{
+        background: $dark !important;
+        border: 1px solid $dark !important;
+        width: 100%;
+      }
+    }
+    &-form-success{
+      display: flex;
+      flex-direction: column;
+      width: 80%;
+
+    }
+    &-text-side {
+      width: 60%;
+
+      &-title{
+        font-size: 40px;
+        margin-bottom: 10px;
+        font-weight: 700;
+      }
+    }
+  
+    &-image-side {
+     width: 40%;
+     img{
+        width: 100%;
+     }
+     .mobile-image{
+      display: none;
+     }
+    }
+    ul{
+      padding: 15px 0  25px 25px;
+    }
+    li{
+      margin-bottom: 10px;
+      padding-left: 8px;
+    }
+    .form-control{
+       padding: 10px 15px;
+       border: 1px solid $dark;
+       border-radius: 5px;
+       margin-top: 10px;
+       margin-bottom: 20px;
+       color: $dark;
+    }
+    .error{
+      color: $primary;
+      text-align: right;
+      display: none;
+    }
+    label{
+      font-weight: 500;
+    }
+    .btn{
+      padding: 10px 25px;
+      border-radius: 5px;
+      border: 1px solid $dark;
+      color: $white;
+      font-size: 16px;
+      font-weight: 500;
+      background-color: $dark;
+      box-shadow: 10px 10px 5px 0px rgba(245,238,238,0.75);
+      &:hover{
+        background:$primary;
+        border: 1px solid $primary;
+      }
+    }
+   
+  }
+
+  @media(max-width:767px){
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  padding: 0;
+  &-text-side {
+    width: 100%;
+    padding: 30px;
+
+    &-title{
+      font-size: 30px;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+  }
+
+  &-image-side {
+   width: 100%;
+   img{
+      width: 100%;
+   }
+   .desktop-image{
+    display: none;
+   }
+   .mobile-image{
+    display: block;
+    margin-bottom: 20px;
+   }
+  }
+  &-form-success{
+    width: 100%;
+
+  }
+}
+  }

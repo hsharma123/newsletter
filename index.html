@@ -1,52 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/App.css">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>newsletter</title>
 </head>
 <body>
-
-  <!-- Sign-up form start -->
-
-  Stay updated!
-
-  Join 60,000+ product managers receiving monthly updates on:
-
-  Product discovery and building what matters
-  Measuring to ensure updates are a success
-  And much more!
-
-  Email address
-  email@company.com
-
-  Subscribe to monthly newsletter
-
-  <!-- Sign-up form end -->
-
-  <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com. 
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
-  <!-- Success message end -->
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+     <div class="main">
+        <div class="main-text-side">
+            <h2 class="main-text-side-title">Stay Update !</h2>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <div class="main-list">
+                <ul>
+                    <li>Product discovery and building what matters</li>
+                    <li>Measuring to ensure updates are a success</li>
+                    <li>And much more!</li>
+                </ul>
+            </div>
+            <div class="main-form">
+                <form action="./success.html" id="newsletter" class="main-form-success">
+                    <label for="email">Email</label>
+                    <p class="error">valid email format</p>
+                    <input type="email" name="email" placeholder="email@company.com" class="form-control">
+                    <button class="btn btn-dark" type="submit">Subscribe to monthly newsletter</button>
+                </form>
+            </div>
+        </div>
+        <div class="main-image-side">
+            <img src="./assets/images/illustration-sign-up-desktop.svg" alt="desktop-image" class="desktop-image">
+            <img src="./assets/images/illustration-sign-up-mobile.svg" alt="desktop-image" class="mobile-image">
+        </div>
+     </div>
+     <script src="./assets/js/main.js"></script>
 </body>
 </html>
